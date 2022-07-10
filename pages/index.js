@@ -9,28 +9,28 @@ export default function Home(results) {
   const [characters, setCharacters] = useState(initialState.characters);
   console.log(initialState);
   return (
-    <section class="text-gray-400 bg-gray-900 body-font">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+    <section className="text-gray-400 bg-gray-900 body-font">
+      <div className="container px-5 py-24 mx-auto">
+        <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
         {results.characters && results.characters.map((character) =>
-          <div class="p-5 md:w-1/5 sm:mb-0 mb-6">
-            <div class="rounded-lg h-64 overflow-hidden">
+          <div className="p-5 md:w-1/5 sm:mb-0 mb-6">
+            <div className="rounded-lg h-64 overflow-hidden">
               <img
                 alt="content"
-                class="object-cover object-center h-full w-full"
+                className="object-cover object-center h-full w-full"
                 src={`${character.image}`}
               />
             </div>
-            <h2 class="text-xl font-medium title-font text-white mt-5">
+            <h2 className="text-xl font-medium title-font text-white mt-5">
               {character.name}
             </h2>
-            <p class="text-base leading-relaxed mt-2">
+            <p className="text-base leading-relaxed mt-2">
               Origin:- {character.origin.name}
             </p>
-            <p class="text-base leading-relaxed mt-2">
+            <p className="text-base leading-relaxed mt-2">
               Location:- {character.location.name}
             </p>
-            <a class="text-indigo-400 inline-flex items-center mt-3">
+            <a className="text-indigo-400 inline-flex items-center mt-3">
               Learn More
               <svg
                 fill="none"
@@ -38,7 +38,7 @@ export default function Home(results) {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                class="w-4 h-4 ml-2"
+                className="w-4 h-4 ml-2"
                 viewBox="0 0 24 24"
                 >
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
