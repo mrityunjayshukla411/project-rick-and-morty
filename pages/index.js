@@ -13,7 +13,7 @@ export default function Home(results) {
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
         {results.characters && results.characters.map((character) =>
-          <div className="p-5 md:w-1/5 sm:mb-0 mb-6">
+          <div key={character.id}className="p-5 md:w-1/5 sm:mb-0 mb-6">
             <div className="rounded-lg h-64 overflow-hidden">
               <img
                 alt="content"
