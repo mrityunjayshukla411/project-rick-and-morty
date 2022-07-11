@@ -33,7 +33,7 @@ export default function Home(results) {
                   Location:- {character.location.name}
                 </p>
                 <Link key={character.id} className="text-indigo-400 inline-flex items-center mt-3" href={`/characters/${character.id}`}>
-                <a class="mt-3 text-indigo-400 inline-flex items-center">Learn More
+                <a className="mt-3 text-indigo-400 inline-flex items-center">Learn More
                   <svg
                     fill="none"
                     stroke="currentColor"
